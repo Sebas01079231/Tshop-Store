@@ -1,0 +1,75 @@
+@use 'variables' as v; 
+@use 'mixins' as m;
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+    @include m.tablet{ 
+        overflow-x: hidden;
+        
+    }
+}
+*,*:after, *:before {
+    box-sizing: inherit;
+}
+
+body{
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    // background-color: #333;
+}
+p, th, td{
+    color: v.$negro;
+    font-family: v.$fuentePrincipal;
+    font-weight: 400;
+    letter-spacing: .15rem;
+}
+h1, h2, h3{
+    font-family: v.$fuenteSecundaria;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+h1{
+    font-size: 7rem;
+    letter-spacing: .2rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: v.$negro;
+    color: v.$negro;
+    font-family: v.$fuentePrincipal;
+    font-weight: 400;
+    letter-spacing: .15rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    margin: 0 auto;
+    width: min(120rem, 95%);
+}
+.btn{
+    color: v.$verde;
+    background-color: #000000;
+    padding: 1rem 2.5rem;
+    transition: all 0.3s ease; 
+
+    &:hover{
+        border: 1px solid black;
+        color: #000000;
+        background-color: v.$verde;
+    }
+}

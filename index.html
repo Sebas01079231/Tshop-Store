@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la moda más actual y viste con estilo en nuestra tienda online de ropa. Encuentra las últimas tendencias en ropa para hombres y mujeres con una amplia variedad de estilos, tallas y colores. ¡Renueva tu armario con nuestras colecciones y crea tu propio look único! Envíos rápidos y devoluciones fáciles. ¡Haz tu pedido hoy mismo!">
+    <title>Tienda-Ropa</title>
+
+    
+    <link rel="stylesheet" href="build/css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lato:ital,wght@0,400;0,900;1,700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="rebaja">
+            <p>Rebaja del 25% en todo, usando TEES25 al pagar</p>
+        </div>
+
+        <div class="barra">
+            <div class="logo">
+                <a href="index.html"><h2>T shop</h2></a>
+            </div>
+            
+            <div class="menu">
+                <nav class="navegacion">
+                    <a href="#">Nuevo</a>
+                    <a href="#">Mujer</a>
+                    <a href="#">Hombre</a>
+                </nav>
+                <div class="login">
+                    <a href="#"><img src="build/img/Icons/user.svg" alt="Usuario Logo" width="500" height="300"></a>
+                    <a href="#"><p>Entrar</p></a>
+
+                    <div class="img_carrito" id="abrir_carrito">
+                        <a href="#"><img src="build/img/Icons/cart.svg" alt="Carrito Logo" width="500" height="300"></a>
+
+                        <a href="#" class="bg_numero">
+                            <p class="numero_productos">0</p>
+                        </a>  
+                    </div>
+                    
+                </div>
+                <div class="submenu">
+                    <div id="carrito">
+                        <table class="lista_carrito" id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        
+                        <div class="img_vacio">
+                            <picture>
+                                <source class="vacio" srcset="build/img/carrito-vacio.avif" type="image/avif">
+                                <source class="vacio" srcset="build/img/carrito-vacio.webp" type="image/webp">
+                                <source class="vacio" srcset="build/img/carrito-vacio.jpg" type="image/jpg">
+                                <img class="vacio" src="build/img/carrito-vacio.jpg" width="500" height="300" alt="Imagen de carrito vacio">
+                            </picture>
+                        </div>
+                        <a href="#" id="vaciar-carrito" class="btn btn--submenu">Vaciar Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_texto">
+            <h1>T shop</h1>
+            <p>Playeras para todos</p>
+        </div>
+    </header>
+
+
+    <section class="graficos">
+        <div class="grafico grafico-1">
+            <!-- <img src="build/img/ChicaIMG.webp" alt="Chica"> -->
+            <div class="texto-categoria">
+                <p>Mujer</p>
+            </div>
+        </div>
+        <div class="grafico grafico-2">
+            <!-- <img src="build/img/PlayeraIMG.webp" alt="Playera Centro"> -->
+            <div class="texto-categoria">
+                <p>Lo Nuevo</p>
+            </div>
+        </div>
+        <div class="grafico grafico-3">
+            <!-- <img src="build/img/negroIMG.webp" alt="Chico"> -->
+            <div class="texto-categoria">
+                <p>Hombre</p>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="main contenedor">
+        <h2>Novedades</h2>
+
+        <div class="productos" id="productos">
+            
+            <div class="producto">
+                <div class="producto_img">
+                    <picture>
+                        <source srcset="build/img/galeria/01.avif" type="image/avif">
+                        <source srcset="build/img/galeria/01.webp" type="image/webp">
+                        <source srcset="build/img/galeria/01.jpg" type="image/jpg">
+                        <img loading="lazy" src="build/img/galeria/01.jpg" width="500" height="300" alt="Imagen Playera">
+                    </picture>
+                </div>
+                <div class="producto_info">
+                    <div class="producto_texto">
+                        <p class="producto_nombre">Producto 1</p>
+                        <p class="producto_precio">$<span>299.00</span></p>
+                    </div>
+                    <div class="producto__add">
+                        <a href="#">
+                            <img class="agregar-carrito" data-id="1"  src="build/img/Icons/cart.svg" width="500" height="300" alt="icono add">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- producto -->
+
+            <div class="producto">
+                <div class="producto_img">
+                    <picture>
+                        <source srcset="build/img/galeria/02.avif" type="image/avif">
+                        <source srcset="build/img/galeria/02.webp" type="image/webp">
+                        <source srcset="build/img/galeria/02.jpg" type="image/jpg">
+                        <img loading="lazy" src="build/img/galeria/02.jpg" width="500" height="300" alt="Imagen Playera">
+                    </picture>
+                </div>
+                <div class="producto_info">
+                    <div class="producto_texto">
+                        <p class="producto_nombre">Producto 2</p>
+                        <p class="producto_precio">$<span>299.00</span></p>
+                    </div>
+                    <div class="producto__add">
+                        <a href="#">
+                            <img class="agregar-carrito" data-id="2" src="build/img/Icons/cart.svg" width="500" height="300" alt="icono add">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- producto -->
+
+            <div class="producto">
+                <div class="producto_img">
+                    <picture>
+                        <source srcset="build/img/galeria/03.avif" type="image/avif">
+                        <source srcset="build/img/galeria/03.webp" type="image/webp">
+                        <source srcset="build/img/galeria/03.jpg" type="image/jpg">
+                        <img loading="lazy" src="build/img/galeria/03.jpg" width="500" height="300" alt="Imagen Playera">
+                    </picture>
+                </div>
+                <div class="producto_info">
+                    <div class="producto_texto">
+                        <p class="producto_nombre">Producto 3</p>
+                        <p class="producto_precio">$<span>299.00</span></p>
+                    </div>
+                    <div class="producto__add">
+                        <a href="#">
+                            <img class="agregar-carrito" data-id="3" src="build/img/Icons/cart.svg" width="500" height="300" alt="icono add">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- producto -->
+
+            <div class="producto">
+                <div class="producto_img">
+                    <picture>
+                        <source srcset="build/img/galeria/04.avif" type="image/avif">
+                        <source srcset="build/img/galeria/04.webp" type="image/webp">
+                        <source srcset="build/img/galeria/04.jpg" type="image/jpg">
+                        <img loading="lazy" src="build/img/galeria/04.jpg" width="500" height="300" alt="Imagen Playera">
+                    </picture>
+                </div>
+                <div class="producto_info">
+                    <div class="producto_texto">
+                        <p class="producto_nombre">Producto 4</p>
+                        <p class="producto_precio">$<span>299.00</span></p>
+                    </div>
+                    <div class="producto__add">
+                        <a href="#">
+                            <img class="agregar-carrito" data-id="4" src="build/img/Icons/cart.svg" width="500" height="300" alt="icono add">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- producto -->
+
+            <div class="producto">
+                <div class="producto_img">
+                    <picture>
+                        <source srcset="build/img/galeria/05.avif" type="image/avif">
+                        <source srcset="build/img/galeria/05.webp" type="image/webp">
+                        <source srcset="build/img/galeria/05.jpg" type="image/jpg">
+                        <img loading="lazy" src="build/img/galeria/05.jpg" width="500" height="300" alt="Imagen Playera">
+                    </picture>
+                </div>
+                <div class="producto_info">
+                    <div class="producto_texto">
+                        <p class="producto_nombre">Producto 5</p>
+                        <p class="producto_precio">$<span>299.00</span></p>
+                    </div>
+                    <div class="producto__add">
+                        <a href="#">
+                            <img class="agregar-carrito"  data-id="5" src="build/img/Icons/cart.svg" width="500" height="300" alt="icono add">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- producto -->
+
+            <div class="producto">
+                <div class="producto_img">
+                    <picture>
+                        <source srcset="build/img/galeria/06.avif" type="image/avif">
+                        <source srcset="build/img/galeria/06.webp" type="image/webp">
+                        <source srcset="build/img/galeria/06.jpg" type="image/jpg">
+                        <img loading="lazy" src="build/img/galeria/06.jpg" width="500" height="300" alt="Imagen Playera">
+                    </picture>
+                </div>
+                <div class="producto_info">
+                    <div class="producto_texto">
+                        <p class="producto_nombre">Producto 6</p>
+                        <p class="producto_precio">$<span>299.00</span></p>
+                    </div>
+                    <div class="producto__add">
+                        <a href="#">
+                            <img class="agregar-carrito"  data-id="6" src="build/img/Icons/cart.svg" width="500" height="300" alt="icono add">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- producto -->
+
+            <div class="producto">
+                <div class="producto_img">
+                    <picture>
+                        <source srcset="build/img/galeria/07.avif" type="image/avif">
+                        <source srcset="build/img/galeria/07.webp" type="image/webp">
+                        <source srcset="build/img/galeria/07.jpg" type="image/jpg">
+                        <img loading="lazy" src="build/img/galeria/07.jpg" width="500" height="300" alt="Imagen Playera">
+                    </picture>
+                </div>
+                <div class="producto_info">
+                    <div class="producto_texto">
+                        <p class="producto_nombre">Producto 7</p>
+                        <p class="producto_precio">$<span>299.00</span></p>
+                    </div>
+                    <div class="producto__add">
+                        <a href="#">
+                            <img class="agregar-carrito"  data-id="7" src="build/img/Icons/cart.svg" width="500" height="300" alt="icono add">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- producto -->
+
+            <div class="producto">
+                <div class="producto_img">
+                    <picture>
+                        <source srcset="build/img/galeria/08.avif" type="image/avif">
+                        <source srcset="build/img/galeria/08.webp" type="image/webp">
+                        <source srcset="build/img/galeria/08.jpg" type="image/jpg">
+                        <img loading="lazy" src="build/img/galeria/08.jpg" width="500" height="300" alt="Imagen Playera">
+                    </picture>
+                </div>
+                <div class="producto_info">
+                    <div class="producto_texto">
+                        <p class="producto_nombre">Producto 8</p>
+                        <p class="producto_precio">$<span>299.00</span></p>
+                    </div>
+                    <div class="producto__add">
+                        <a href="#">
+                            <img class="agregar-carrito"  data-id="8" src="build/img/Icons/cart.svg" width="500" height="300" alt="icono add">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- producto -->
+        </div><!-- productos -->
+    </main>
+
+    <div class="btn-Comprar">
+        <a class="btn" href="#">Compra lo Nuevo</a>
+    </div>
+
+
+    <section class="descuentos">
+        <div class="descuentos_flex">
+            <div class="descuento_info">
+                <div class="descuento_contenido">
+                    <p class="descuento_aviso">¡Descuento! <span>Del 25%</span></p>
+                    <p class="aviso_privacidad">Rebaja del 25% en todo, usando TEES25 al pagar</p>
+                </div>
+            </div>
+            <div class="descuento_grafico">
+                
+            </div>
+        </div>
+
+        <div class="anuncio">
+            <a href="#"><h2>¡10% Menos en tu primer compra!</h2></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-seccion">
+            <div class="footer_info">
+                <div class="centrar_elementos">
+                    <h3>T shop</h3>
+                    <a class="correo" href="#">info@tshop.com</a>
+                    <a class="telefono" href="tel:5584956420">Tel: 55-84-95-64-20</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-seccion">
+            <div class="footer_grid">
+
+                <div class="footer-elemento">
+                    <h3>Tienda</h3>
+
+                    <nav class="footer-nav">
+                        <a href="#">Nuevo</a>
+                        <a href="#">Mujer</a>
+                        <a href="#">Hombre</a>
+                    </nav>
+                </div>
+        
+                <div class="footer-elemento">
+                    <h3>Nosotros</h3>
+                    <nav class="footer-nav">
+                        <a href="#">Acerca de</a>
+                        <a href="#">Suscríbete</a>
+                        <a href="#">FAQ</a>
+                    </nav>
+                </div>
+        
+                <div class="footer-elemento">
+                    <h3>Terminos y condiciones</h3>
+                    <nav class="footer-nav">
+                        <a href="#">Política de la tienda</a>
+                        <a href="#">Envío y devoluciones</a>
+                        <a href="#">Métodos de pago</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-seccion">
+            <div class="footer_icons">
+                <div class="footer_icon">
+                    <a href="#">
+                        <img src="build/img/Icons/facebook.svg" alt="Icono footer" width="500" height="300">
+                    </a>
+                </div>
+                <div class="footer_icon">
+                    <a href="#">
+                        <img src="build/img/Icons/instagram.svg" alt="Icono footer" width="500" height="300">
+                    </a>
+                </div>
+                <div class="footer_icon">
+                    <a href="#">
+                        <img src="build/img/Icons/youtube.svg" alt="Icono footer" width="500" height="300">
+                    </a>
+                </div>
+                <div class="footer_icon">
+                    <a href="#">
+                        <img src="build/img/Icons/pinterest.svg" alt="Icono footer" width="500" height="300">
+                    </a>
+                </div>
+                <div class="footer_icon">
+                    <a href="#">
+                        <img src="build/img/Icons/tiktok.svg" alt="Icono footer" width="500" height="300">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-seccion">
+            <div class="footer_copyright">
+                <p>© 2023 Creado por T Shop con Sebastian.Hernandez</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

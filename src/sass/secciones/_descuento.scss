@@ -1,0 +1,102 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+
+.descuentos_flex{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 70rem;
+
+    @include m.telefono{ 
+        display: block;
+        height: auto;
+    }
+    
+}
+.descuento_info{
+    background-color: transparent;
+}
+.descuento_contenido{
+    padding: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to top, v.$verde 0%, transparent 100%);
+}
+.descuento_aviso{
+    font-size: 3rem;
+    margin-bottom: 0;
+    span{
+        display: block;
+        font-size: 15rem;
+        font-weight: 900;
+        font-family: v.$fuenteFrases;
+
+        // @include m.telefono{ 
+        //     font-size: 7rem;
+        // }
+    }
+
+    &::before{
+        content: '';
+        background-image: url(../img/icons/rayo.svg);
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        background-repeat: no-repeat;
+        background-size: 4rem;
+        margin: 0 auto 1rem auto;
+        
+    }
+}
+.aviso_privacidad{
+    font-size: 1.2rem;
+}
+.descuento_grafico{
+    background-image: url(../img/negraIMG.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include m.telefono{ 
+        height: 35rem;
+    }
+}
+
+.anuncio{
+    margin: v.$separacion 0;
+    text-align: center;
+    a{
+        text-decoration: underline;
+    }
+    h2{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        &::before{
+            content: '';
+            background-image: url(../img/icons/flechaderc.svg);
+            display: inline-block;
+            width: 5rem;
+            height: 5rem;
+            background-repeat: no-repeat;
+            background-size: 4rem;
+        }
+        &::after{
+            content: '';
+            background-image: url(../img/icons/flechaizq.svg);
+            display: inline-block;
+            width: 5rem;
+            height: 5rem;
+            background-repeat: no-repeat;
+            background-size: 4rem;
+        }
+
+        @include m.telefono{ 
+            font-size: 2rem;
+        }
+    }
+}

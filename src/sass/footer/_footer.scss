@@ -1,0 +1,113 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+.footer{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 25rem 6rem;
+    border: 1px solid black;
+
+    @include m.telefono{ 
+        display: block;
+    }
+
+}
+.footer_info{
+    background-color: v.$negro;
+    width: 100%;
+    height: 100%;
+    .centrar_elementos{
+        width: 40%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include m.telefono{ 
+            width: auto;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    }
+    h3,
+    a{
+        color: v.$blanco;
+        display: block;
+    }
+    h3{
+        margin: 0 0 2rem 0;
+    }
+    a{
+        font-size: 1.2rem;
+        text-decoration: underline;
+        margin-bottom: 1rem;
+    }
+}
+.footer_grid{
+    display: flex;
+    gap: 10rem;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    @include m.telefono{ 
+        display: block;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .footer-elemento{
+        h3{
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        @include m.telefono{ 
+            margin-bottom: 2rem;
+        }
+    }
+    .footer-nav{
+        display: flex;
+        flex-direction: column;
+        a{
+            font-size: 1.2rem;
+            display: inline;
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+.footer_icons{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-right: 1px solid black;
+    @include m.telefono{ 
+        gap: 1rem;
+        padding: 2rem 0;
+        border: none;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+.footer_copyright{
+    height: 100%;
+    background-color: v.$verde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        margin: 0;
+        font-size: 1.2rem;
+        @include m.telefono{ 
+            text-align: center;
+            padding: 2rem 0;
+        }
+    }
+}
+
